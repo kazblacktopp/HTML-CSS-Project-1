@@ -79,6 +79,7 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 button {
@@ -111,7 +112,8 @@ a:active {
 }
 
 .container {
-  margin: 0 7.7rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .nav__list {
@@ -142,8 +144,8 @@ a:active {
 }
 
 .post__img {
-  width: 80rem;
-  height: 32rem;
+  width: 100%;
+  height: auto;
 }
 
 .post__header {
