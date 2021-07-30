@@ -45,6 +45,19 @@ h1::first-letter {
 h2 {
   font-size: 4rem;
   margin-bottom: 3rem;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: rgb(252, 227, 4);
+  color: #444;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: -1rem;
+  right: -2.5rem;
 }
 
 h3 {
@@ -116,6 +129,17 @@ a:active {
   margin: 0 auto;
 }
 
+.main-header {
+  width: 100%;
+  margin-bottom: 6rem;
+  padding: 2rem 4rem;
+}
+
+.main-header,
+.related-posts {
+  background-color: var(--color-background);
+}
+
 .nav__list {
   display: flex;
   margin: 0;
@@ -165,18 +189,6 @@ a:active {
 
 .related-posts-list {
   list-style: none;
-}
-
-.main-header {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 6rem;
-  padding: 2rem 4rem;
-}
-
-.main-header,
-.related-posts {
-  background-color: var(--color-background);
 }
 
 .copyright {
