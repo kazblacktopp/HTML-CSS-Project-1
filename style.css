@@ -170,6 +170,7 @@ a:active {
 .post__img {
   width: 100%;
   height: auto;
+  margin-bottom: 1.5rem;
 }
 
 .post__header {
