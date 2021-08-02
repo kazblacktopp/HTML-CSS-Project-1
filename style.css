@@ -17,7 +17,6 @@ html {
 body {
   font-family: sans-serif;
   color: #444;
-  border-top: 1rem solid var(--color-primary);
   position: relative;
 }
 
@@ -35,6 +34,7 @@ h4 {
 h1 {
   font-size: 2.6rem;
   font-style: italic;
+  display: inline-block;
 }
 
 h1::first-letter {
@@ -76,6 +76,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+nav {
+  float: right;
+}
+
 ol,
 ul {
   margin: 0 0 2rem 5rem;
@@ -105,6 +109,8 @@ button {
 
 article {
   margin-bottom: 6rem;
+  width: 70%;
+  float: left;
 }
 
 a:link,
@@ -125,7 +131,7 @@ a:active {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -133,6 +139,7 @@ a:active {
   width: 100%;
   margin-bottom: 6rem;
   padding: 2rem 4rem;
+  border-top: 1rem solid var(--color-primary);
 }
 
 .main-header,
@@ -141,11 +148,11 @@ a:active {
 }
 
 .nav__list {
-  display: flex;
   margin: 0;
 }
 
 .nav__item {
+  display: inline-block;
   list-style: none;
   margin: 1rem 3rem 0 0;
 }
@@ -157,9 +164,15 @@ a:active {
   font-weight: normal;
 }
 
+.author__img {
+  float: left;
+  margin-bottom: 2rem;
+}
+
 .author {
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0 1.5rem 2rem;
+  float: left;
 }
 
 .author,
@@ -181,7 +194,9 @@ a:active {
   border-top: 0.5rem solid var(--color-primary);
   border-bottom: 0.5rem solid var(--color-primary);
   padding: 5rem 0;
-  width: 50rem;
+  width: 25%;
+  float: right;
+  padding: 5rem 4rem;
 }
 
 .related-author {
@@ -190,9 +205,11 @@ a:active {
 
 .related-posts-list {
   list-style: none;
+  margin-left: 0;
 }
 
 .copyright {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
+  clear: both;
 }
