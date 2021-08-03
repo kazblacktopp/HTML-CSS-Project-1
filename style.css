@@ -161,12 +161,13 @@ a:active {
 
 .sub__container {
   display: flex;
-  gap: 50px;
+  gap: 7.5rem;
+  margin-bottom: 6rem;
+  align-items: flex-start;
 }
 
 .main__article {
-  margin-bottom: 6rem;
-  flex: 2;
+  flex: 1;
 }
 
 .post__header {
@@ -199,9 +200,8 @@ a:active {
 .related__posts {
   border-top: 0.5rem solid var(--color-primary);
   border-bottom: 0.5rem solid var(--color-primary);
-  padding: 5rem 4rem;
-  align-self: flex-start;
-  flex: 1;
+  padding: 4rem 2.5rem;
+  flex: 0 0 30rem;
 }
 
 .related__posts-heading {
@@ -216,7 +216,7 @@ a:active {
 .related__post-item {
   display: flex;
   margin-bottom: 4rem;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
